@@ -1,0 +1,83 @@
+
+<html lang="en">
+<head>
+	<title>Student Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+</head>
+<body>
+	<div class="limiter">
+	
+		<div class="container-login100">
+		<?php
+ include("header1.php");?>
+			<div class="wrap-login100">
+				
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/pic4.jpg" alt="IMG">
+				</div>
+				
+
+				<form class="login100-form validate-form" method="post" action="errorstu.php">
+					<span class="login100-form-title">
+						Student Login
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = " Enter Valid user id">
+						<input class="input100" type="text" name="numb" placeholder="User id">
+						
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<input class="login100-form-btn" type='submit' name='Submit' value='Login'>
+					</div>
+					
+								
+				
+
+					<div class="text-center p-t-148 fs-10">
+							 ©Copyright <br>
+							 Author: Himanshu Saxena , 
+							         Sourav Pal ,
+							         Rajat Srivastava ,
+							         Sahibe Alam  
+						</a>
+					</div>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
